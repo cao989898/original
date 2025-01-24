@@ -1,10 +1,10 @@
 name: Create diagram
-
 on:
+  workflow_dispatch: {}
   push:
-    paths:
-      - 'diagram.svg'
-
+    branches:
+      - main
+      
 jobs:
   get_data:
     runs-on: ubuntu-latest
